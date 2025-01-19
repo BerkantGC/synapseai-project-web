@@ -1,50 +1,81 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    imgUrl: '/explore-ss.png',
+    title: 'Explore contents',
   },
   {
     id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
-  },
-  {
-    id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Hueco Mundo',
+    imgUrl: '/generate-ss.png',
+    title: 'Generate Image',
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    imgUrl: '/editor-ss.png',
+    title: 'Upload your images',
+  },
+  {
+    id: 'world-3',
+    imgUrl: '/chat-ss.png',
+    title: 'Chat with friends',
   },
   {
     id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    imgUrl: '/followers.png',
+    title: 'Realtime notifications',
   },
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading precaution to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Sign up and create your account',
+  'Enter the world by discovering new contents',
+  'Upload or generate your own images and share',
+  "Show your memories even if you couldn’t record them",
 ];
 
-export const newFeatures = [
+export const technologies = [
   {
-    imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    imgUrl: '/spring-original-wordmark.svg',
+    title: 'Spring',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'Spring is used for the backend of the application. It is a powerful framework based on Java',
   },
   {
-    imgUrl: '/headset.svg',
-    title: 'More realistic',
+    imgUrl: '/swift-original.svg',
+    title: 'SwiftUI',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'SwiftUI is used for native mobile app.',
   },
+  {
+    imgUrl: '/synapse-icon.png',
+    title: 'Our own Image Generator model based on Stable Diffusion',
+    subtitle:
+        'It is used to generate images according to user inputs.',
+  },
+  {
+    imgUrl: '/synapse-icon.png',
+    title: 'ResNet model',
+    subtitle:
+        'Res Net model is used for image classification. and friend recommendation',
+  },
+  {
+    imgUrl: '/postgresql-original-wordmark.svg',
+    title: 'PostgreSQL',
+    subtitle:
+        'PostgreSQL is used for the database of the application.',
+  },
+  {
+    imgUrl: '/docker-original.svg',
+    title: 'Docker',
+    subtitle:
+        'Docker is used for containerization of the application.',
+  },
+  {
+    imgUrl: '/websocket.svg',
+    title: 'Websocket',
+    subtitle:
+        'Websocket is used for realtime communication between users.',
+  }
 ];
 
 export const insights = [
@@ -65,23 +96,5 @@ export const insights = [
     title: 'With one platform you can explore the whole world virtually',
     subtitle:
         'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
-  },
-];
-
-export const socials = [
-  {
-    name: 'twitter',
-    url: '/twitter.svg',
-    link: 'https://twitter.com/VigneshGupta9',
-  },
-  {
-    name: 'linkedin',
-    url: '/linkedin.svg',
-    link: 'https://www.linkedin.com/in/vigneshgupta/',
-  },
-  {
-    name: 'instagram',
-    url: '/instagram.svg',
-    link: 'https://www.instagram.com/_viggi.g_/',
   },
 ];

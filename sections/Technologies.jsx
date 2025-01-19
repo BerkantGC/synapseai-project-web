@@ -3,9 +3,10 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { newFeatures } from '../constants';
+import { newFeatures, technologies } from '../constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
+import EachTechnology from '../components/EachTechnology';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -20,11 +21,11 @@ const WhatsNew = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.95] flex justify-center flex-col"
       >
-        <TypingText title="| Whats new?" />
-        <TitleText title={<>What's new about MetaDroid?</>} />
+        <TypingText title="| what's used?" />
+        <TitleText title={<>Which technologies were used in Snyapse?</>} />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {newFeatures.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
+          {technologies.map((feature) => (
+            <EachTechnology key={feature.title} {...feature} />
           ))}
         </div>
       </motion.div>

@@ -18,16 +18,14 @@ const Hero = () => (
           variants={textVariant(1.1)}
           className={styles.heroHeading}
         >
-          Metadroid
+          SYNAPSE
         </motion.h1>
-        <motion.div
+        <motion.h3
           variants={textVariant(1.2)}
-          className="flex flex-row items-center justify-center"
+          className={styles.heroDescription}
         >
-          <h1 className={styles.heroHeading}> Ma</h1>
-          <div className={styles.heroDText} />
-          <h1 className={styles.heroHeading}> Ness</h1>
-        </motion.div>
+          AI-Enhanced Social Media Platform
+        </motion.h3>
       </div>
 
       <motion.div

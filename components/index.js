@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
 import ExploreCard from './ExploreCard';
 import StartSteps from './StartSteps';
-import NewFeatures from './NewFeatures';
+import NewFeatures from './EachTechnology';
 import InsightCard from './InsightCard';
 import Footer from './Footer';
 

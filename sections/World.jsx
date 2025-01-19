@@ -18,7 +18,7 @@ const World = () => (
       <TitleText
         title={(
           <>
-            Track friends around you and invite them to play together in the same world
+            Explore the world and interact with people with <span className="text-primary-blue">Synapse AI</span>
           </>
         )}
         textStyles="text-center"
