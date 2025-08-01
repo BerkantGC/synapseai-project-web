@@ -13,7 +13,7 @@ const Explore = () => {
   const [active, setActive] = useState('world-2');
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className={`${styles.paddings} flex justify-center items-center`} id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -22,9 +22,9 @@ const Explore = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| The Features" textStyles="text-center" />
-        <TitleText title={<>Choose the feature you want <br className="md:block hidden " />to Explore</>} textStyles="text-center" />
+        <TitleText title={<>Explore</>} textStyles="text-center" />
 
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+        <div className="mt-[50px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 px-4 sm:px-0">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
@@ -35,6 +35,7 @@ const Explore = () => {
             />
           ))}
         </div>
+
       </motion.div>
     </section>
   );

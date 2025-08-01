@@ -6,31 +6,79 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  scroll-behavior: auto;
+}
+
+/* Mobile-first responsive design improvements */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Enhanced touch targets for mobile */
+button, a, [role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+
+/* Better mobile scrolling */
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Prevent horizontal scroll */
+  * {
+    max-width: 100%;
+  }
+}
+
+/* Professional override for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes for text truncation */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .gradient-01 {
-  background-image: linear-gradient(
-    270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
-  );
-  filter: blur(125px);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  filter: blur(80px);
+  opacity: 0.3;
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
-  );
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
 }
 
 .gradient-02 {
@@ -39,69 +87,85 @@
   height: 438px;
   top: 0px;
   right: 0px;
-
-  background: #7aebfb;
-  filter: blur(190px);
+  background: #34495e;
+  filter: blur(100px);
+  opacity: 0.2;
 }
 
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .gradient-03 {
   position: absolute;
-  width: 404px;
-  height: 800px;
+  width: 300px;
+  height: 600px;
   left: 20%;
   top: 5%;
+  background: rgba(52, 73, 94, 0.15);
+  filter: blur(120px);
+  transform: rotate(-45deg);
+}
 
-  background: rgba(149, 66, 232, 0.35);
-  filter: blur(175px);
-  transform: rotate(-114.2deg);
+@media (max-width: 768px) {
+  .gradient-03 {
+    width: 200px;
+    height: 400px;
+    left: 10%;
+    filter: blur(80px);
+  }
 }
 
 .gradient-04 {
   position: absolute;
-  width: 304px;
-  height: 100vh;
+  width: 250px;
+  height: 80vh;
   left: 30%;
   top: 10%;
+  background: rgba(44, 62, 80, 0.3);
+  filter: blur(150px);
+  transform: rotate(-30deg);
+}
 
-  background: rgba(45, 72, 152, 0.75);
-  filter: blur(200px);
-  transform: rotate(-53.13deg);
+@media (max-width: 768px) {
+  .gradient-04 {
+    width: 180px;
+    height: 60vh;
+    left: 20%;
+    filter: blur(100px);
+  }
 }
 
 .gradient-05 {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.02) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
 
 .feedback-gradient {
   position: absolute;
-  width: 200px;
-  height: 316px;
+  width: 150px;
+  height: 250px;
   left: 0px;
   top: 0px;
-
-  background: #8d39a3;
-  filter: blur(175px);
+  background: #2c3e50;
+  filter: blur(100px);
+  opacity: 0.3;
 }
 
 .footer-gradient {
   position: absolute;
-  width: 500px;
-  height: 100px;
+  width: 400px;
+  height: 80px;
   left: 37%;
   bottom: 0;
-
-  background: #65c4fa;
-  filter: blur(150px);
+  background: #34495e;
+  filter: blur(100px);
+  opacity: 0.2;
 }

@@ -3,7 +3,6 @@ import About from './About';
 import Explore from './Explore';
 import GetStarted from './GetStarted';
 import Technologies from './Technologies';
-import World from './World';
 import Feedback from './Feedback';
 
 export {
@@ -12,6 +11,5 @@ export {
   Explore,
   GetStarted,
   Technologies,
-  World,
   Feedback,
 };

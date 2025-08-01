@@ -11,34 +11,16 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
+    className={`${styles.xPaddings} py-6 sm:py-8 relative bg-gray-800 border-t border-gray-700`}
   >
-    <div className="footer-gradient" />
-    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Join the Synapse AI
-        </h4>
-        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Enter Synapse
-          </span>
-        </button>
-      </div>
-
+    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-6 sm:gap-8`}>
       <div className="flex flex-col">
-        <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">
+          <h4 className="font-extrabold text-[20px] sm:text-[24px] text-white">
             SYNAPSE
           </h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
+          <p className="font-normal text-[12px] sm:text-[14px] text-gray-400 text-center sm:text-right">
             Copyright © 2024 - 2025 Synapse. All rights reserved.
           </p>
         </div>

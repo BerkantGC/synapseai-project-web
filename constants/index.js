@@ -1,17 +1,22 @@
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/explore-ss.png',
+    imgUrl: '/explore.png',
     title: 'Explore contents',
   },
   {
     id: 'world-2',
-    imgUrl: '/generate-ss.png',
+    imgUrl: '/prompt.png',
     title: 'Generate Image',
   },
   {
+    id: 'world-3',
+    imgUrl: '/postDetail.png',
+    title: 'Interact with generated or uploaded contents',
+  },
+  {
     id: 'world-4',
-    imgUrl: '/editor-ss.png',
+    imgUrl: '/editor-ss.jpeg',
     title: 'Upload your images',
   },
   {
@@ -20,17 +25,35 @@ export const exploreWorlds = [
     title: 'Chat with friends',
   },
   {
-    id: 'world-5',
-    imgUrl: '/followers.png',
-    title: 'Realtime notifications',
+    id: "world-4",
+    imgUrl: '/comments.jpeg',
+    title: "Interact with other people",
+  },
+  {
+    id: 'world-6',
+    imgUrl: '/notification.jpeg',
+    title: 'Realtime notifications 2',
+  },
+  {
+    id: 'world-6',
+    imgUrl: '/demo.mp4',
+    title: 'Demo Video',
+    description: 'Watch our application in action',
+  },
+  {
+    id: 'world-7',
+    imgUrl: '/generated-video.mp4',
+    title: 'Generated Video Example',
+    description: 'Synapse generated video file demonstration',
   },
 ];
 
 export const startingFeatures = [
   'Sign up and create your account',
   'Enter the world by discovering new contents',
-  'Upload or generate your own images and share',
+  'Upload or generate your own content (images & videos) and share',
   "Show your memories even if you couldn’t record them",
+  "Interact with other people"
 ];
 
 export const technologies = [
