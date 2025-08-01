@@ -19,7 +19,7 @@ const FullScreen = ({ imgUrl, title, isFullscreen, setIsFullscreen, isVideo, isY
     <AnimatePresence>
       {isFullscreen && (
         <motion.div
-          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-6"
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-2 xs:p-4 sm:p-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -32,7 +32,7 @@ const FullScreen = ({ imgUrl, title, isFullscreen, setIsFullscreen, isVideo, isY
           aria-labelledby="fullscreen-title"
         >
           <motion.div
-            className="relative w-full h-full max-w-6xl max-h-[90vh] flex items-center justify-center"
+            className="relative w-full h-full max-w-6xl max-h-[95vh] xs:max-h-[90vh] flex items-center justify-center"
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
@@ -49,7 +49,7 @@ const FullScreen = ({ imgUrl, title, isFullscreen, setIsFullscreen, isVideo, isY
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className="max-w-full max-h-full rounded-xl shadow-2xl"
+                    className="max-w-full max-h-full rounded-lg sm:rounded-xl shadow-2xl"
                     style={{ aspectRatio: '16/9' }}
                   />
                 ) : isStaticVideo ? (
@@ -57,7 +57,7 @@ const FullScreen = ({ imgUrl, title, isFullscreen, setIsFullscreen, isVideo, isY
                     src={imgUrl}
                     controls
                     autoPlay
-                    className="w-full h-full rounded-xl shadow-2xl"
+                    className="w-full h-full rounded-lg sm:rounded-xl shadow-2xl"
                     style={{ aspectRatio: '16/9' }}
                   >
                     Your browser does not support the video tag.
@@ -68,13 +68,13 @@ const FullScreen = ({ imgUrl, title, isFullscreen, setIsFullscreen, isVideo, isY
               <img
                 src={imgUrl}
                 alt={title}
-                className="max-w-full max-h-full object-contain rounded-xl shadow-2xl"
+                className="max-w-full max-h-full object-contain rounded-lg sm:rounded-xl shadow-2xl"
               />
             )}
 
             {/* Close Button */}
             <motion.button
-              className="absolute top-4 right-4 bg-white/10 text-white hover:bg-white hover:text-black p-2 rounded-full backdrop-blur-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white"
+              className="absolute top-2 right-2 xs:top-4 xs:right-4 bg-white/10 text-white hover:bg-white hover:text-black p-1.5 xs:p-2 rounded-full backdrop-blur-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white touch-manipulation"
               onClick={(e) => {
                 e.stopPropagation();
                 setIsFullscreen(false);
@@ -83,7 +83,7 @@ const FullScreen = ({ imgUrl, title, isFullscreen, setIsFullscreen, isVideo, isY
               whileTap={{ scale: 0.95 }}
               aria-label="Close fullscreen view"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 xs:h-6 xs:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </motion.button>

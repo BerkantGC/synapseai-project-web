@@ -57,7 +57,7 @@ const Hero = () => (
               <span className="whitespace-nowrap">Mobile (SwiftUI)</span>
             </a>
             <a
-              href="https://github.com/BerkantGC/SynapseAI-IOS"
+              href="https://github.com/Hevdenn/SynapseAIREC"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-4 py-2.5 sm:px-6 sm:py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm sm:text-base rounded-lg hover:from-purple-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto min-w-[180px]"
